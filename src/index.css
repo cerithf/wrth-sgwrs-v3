@@ -22,8 +22,10 @@
 
 body {
   @apply body-font;
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   color: var(--color-theme-black);
+  background-color: var(--color-theme-cream);
 }
 
 h1,
@@ -46,7 +48,8 @@ h3 {
 }
 
 p {
-  @apply text-justify py-2 body-font;
+  text-align: justify;
+  @apply py-2 body-font;
 }
 
 @utility btn {
@@ -54,11 +57,11 @@ p {
 }
 
 .btn-primary {
-  @apply btn bg-dark-green hover:bg-green text-cream hover:text-dark-green;
+  @apply btn bg-theme-dark-green hover:bg-theme-green text-theme-cream hover:text-theme-dark-green;
 }
 
 .btn-destructive {
-  @apply btn bg-red hover:bg-theme-red text-theme-cream;
+  @apply btn bg-theme-red hover:bg-theme-red text-theme-cream;
 }
 
 @utility center-all {
@@ -69,7 +72,7 @@ p {
   @apply border-3 border-red-400;
 }
 .card {
-  @apply bg-theme1 text-black rounded-lg p-5;
+  @apply bg-theme-cream text-black rounded-lg p-5;
 }
 
 @utility page-title {
@@ -87,25 +90,7 @@ p {
   @apply pt-8;
 }
 
-.GrammarPage table {
-  @apply bg-theme4 p-10 w-full rounded-xl overflow-hidden;
-}
-
-.GrammarPage th {
-  @apply bg-theme2 text-theme5;
-}
-
 .GrammarPage td,
 th {
   @apply p-2 max-w-lg;
-}
-
-.GrammarPage .alphabet {
-  @apply text-center text-3xl font-bold tracking-widest bg-theme1 text-theme5 p-3 px-10 mx-3 rounded-xl;
-}
-
-/* FEEDBACK PAGE STYLING */
-
-.FeedbackPage input[type="text"] {
-  @apply rounded-xl p-1 m-1 border-2 border-theme4;
 }

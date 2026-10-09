@@ -6,9 +6,11 @@ import LogInPage from "./pages/LogInPage";
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<LogInPage />} />
-      </Routes>
+      <div className="App bg-theme-cream">
+        <Routes>
+          <Route path="/" element={<LogInPage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
