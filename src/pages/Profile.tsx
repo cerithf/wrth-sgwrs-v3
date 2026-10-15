@@ -20,7 +20,7 @@ export default function Profile() {
   };
   return (
     <div className="profile-page h-screen flex flex-col">
-      <NavBar />
+      <NavBar currentPage="profile" />
       <main className="py-3 px-6 gap-4 flex flex-col">
         <div className="heading flex">
           <h1>Hey, user! 👋</h1>
