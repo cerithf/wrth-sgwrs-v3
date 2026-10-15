@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ShowVPSize from "../../components/ShowVPSize";
 
 export default function Translate() {
   const translationDirections = ["English > Welsh", "Welsh > English"] as const;
@@ -33,8 +32,15 @@ export default function Translate() {
             Type ⌘↵ to enter text.
           </p>
         </div>
+        <textarea
+          name="translate-field"
+          id="translate-field"
+          className="bg-theme-cream rounded-xl text-black p-4 w-full mt-6 min-h-30"
+        />
+        <button className="btn-primary bg-theme-cream text-theme-dark-green px-5">
+          Enter
+        </button>
       </div>
-      <ShowVPSize />
     </div>
   );
 }
