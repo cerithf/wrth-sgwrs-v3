@@ -30,8 +30,14 @@ export default function Profile() {
         </div>
         <div className="progress border p-4 card">
           <p className="text-lg">
-            <span className="header-font text-3xl">X</span> out of 11 topics
-            learnt
+            <span className="text-6xl font-mono font-bold">
+              {checkedIds.size}
+            </span>{" "}
+            out of{" "}
+            <span className="text-2xl font-mono font-bold">
+              {Topics.length}
+            </span>{" "}
+            topics learnt
           </p>
           <div className="progress-bar flex-1 w-full bg-theme-green overflow-hidden rounded-xl mt-4">
             <div
