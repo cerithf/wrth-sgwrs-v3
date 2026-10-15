@@ -3,6 +3,7 @@ import "./index.css";
 // pages
 import LogInPage from "./pages/LogInPage";
 import Profile from "./pages/Profile";
+import Error404 from "./pages/Error404";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LogInPage />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/*" element={<Error404 />} />
         </Routes>
       </div>
     </Router>

@@ -56,11 +56,14 @@ p {
   @apply rounded-lg p-2 m-1 font-bold hover:cursor-pointer;
 }
 
-.btn-primary {
+@utility btn-primary {
   @apply btn bg-theme-dark-green hover:bg-theme-green text-theme-cream hover:text-theme-dark-green;
 }
 
-.btn-destructive {
+@utility btn-secondary {
+  @apply btn border border-theme-dark-green text-theme-dark-green;
+}
+@utility btn-destructive {
   @apply btn bg-theme-red hover:bg-theme-red text-theme-cream;
 }
 
@@ -71,8 +74,8 @@ p {
 @utility tb {
   @apply border-3 border-red-400;
 }
-.card {
-  @apply bg-theme-cream text-black rounded-lg p-5;
+@utility card {
+  @apply text-black rounded-lg p-5 border border-theme-dark-green shadow-lg;
 }
 
 @utility page-title {

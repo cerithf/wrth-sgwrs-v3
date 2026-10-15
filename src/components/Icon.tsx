@@ -77,7 +77,7 @@ export default function Icon({
 
 export function TopicIcon({
   svgPath,
-  colour = "var(--color-theme5)",
+  colour = "var(--color-theme-dark-green)",
   className,
   style,
 }: {
