@@ -6,6 +6,12 @@ import Profile from "./pages/Profile";
 import Learn from "./pages/Learn";
 import Error404 from "./pages/Error404";
 
+// common functions
+export function capitalise(text: string) {
+  // capitalises first letter of a string
+  return text[0].toUpperCase() + text.substring(1);
+}
+
 function App() {
   return (
     <Router>

@@ -22,9 +22,9 @@ export default function Profile() {
     <div className="profile-page h-screen flex flex-col">
       <NavBar currentPage="profile" />
       <main className="py-3 px-6 gap-4 flex flex-col">
-        <div className="heading flex">
+        <div className="heading md:flex gap-2">
           <h1>Hey, user! 👋</h1>
-          <button className="btn-secondary ml-auto">
+          <button className="btn-secondary ml-auto mt-5 md:mt-0">
             Give us some feedback!
           </button>
         </div>
