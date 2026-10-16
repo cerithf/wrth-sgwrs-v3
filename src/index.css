@@ -82,6 +82,12 @@ p {
   @apply max-sm:text-center pt-2 md:pt-4 pb-10 leading-14;
 }
 
+@media (max-width: 400px) {
+  .xxs-grid-cols-1 {
+    @apply grid-cols-1;
+  }
+}
+
 /* GRAMMAR PAGE STYLING */
 
 .GrammarPage h2 {

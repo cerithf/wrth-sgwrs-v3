@@ -20,6 +20,9 @@ function App() {
           <Route path="/" element={<LogInPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/translate" element={<Learn subpage="translate" />} />
+          <Route path="/dictionary" element={<Learn subpage="dictionary" />} />
+          <Route path="/grammar" element={<Learn subpage="grammar" />} />
           <Route path="/*" element={<Error404 />} />
         </Routes>
       </div>

@@ -5,19 +5,24 @@ import Translate from "./learn-pages/Translate";
 import Dictionary from "./learn-pages/Dictionary";
 import Grammar from "./learn-pages/Grammar";
 
-export default function Learn() {
-  const learnPages = {
-    translate: <Translate />,
-    dictionary: <Dictionary />,
-    grammar: <Grammar />,
-  };
-  type LearnPage = keyof typeof learnPages;
-  const [activePage, setActivePage] = useState<LearnPage>("translate");
+const learnPages = {
+  translate: <Translate />,
+  dictionary: <Dictionary />,
+  grammar: <Grammar />,
+};
+type LearnPage = keyof typeof learnPages;
+
+export default function Learn({
+  subpage = "translate",
+}: {
+  subpage?: LearnPage;
+}) {
+  const [activePage, setActivePage] = useState<LearnPage>(subpage);
   return (
     <div className="learn-page h-screen flex flex-col">
       <div className="md:flex">
         <NavBar currentPage="learn" />
-        <NavBar currentPage={activePage} setTab={setActivePage} />
+        <NavBar currentPage={activePage} variant="learn-pages" />
       </div>
       <main className="py-3 px-6 gap-4 flex flex-col">
         <h1>{capitalise(activePage)}</h1>
