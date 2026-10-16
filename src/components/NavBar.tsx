@@ -31,7 +31,7 @@ export default function NavBar({
     );
   }
   return (
-    <nav className="w-full h-fit flex justify-center p-4 sticky top-0">
+    <nav className="w-full h-fit flex justify-center p-4">
       <ul className="flex gap-4 bg-theme-green rounded-full overflow-hidden">
         {pages.map((page) =>
           currentPage == page ? (

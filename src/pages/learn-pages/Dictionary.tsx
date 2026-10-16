@@ -1,6 +1,6 @@
 import DictionaryData from "../../data/eurfa_dictionary/abridged_dictionary.json";
 import { useState } from "react";
-import Icon from "../../components/Icon";
+import BackToTop from "../../components/BackToTop";
 
 interface dictionaryEntryInterface {
   index: number;
@@ -119,13 +119,7 @@ export default function Dictionary() {
             <h2 id={letter} className="pt-8!">
               {letter}
             </h2>
-            <a
-              href="#"
-              className="text-theme-dark-green font-bold ml-auto flex align-middle gap-1"
-            >
-              <span>Back to top</span>
-              <Icon variant="chevron-up" strokeWidth={2.5} />
-            </a>
+            <BackToTop />
           </span>
           <DictionaryBrowseSection data={getWordsWithLetter(letter)} />
           <hr className="mt-4" />
