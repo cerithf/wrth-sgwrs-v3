@@ -27,7 +27,6 @@ function App() {
           <Route path="/*" element={<Error404 />} />
         </Routes>
       </div>
-      <BackToTop />
     </Router>
   );
 }

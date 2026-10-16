@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar";
 import Topics from "../data/conversation_topics.json";
 import { useState } from "react";
 import { TopicIcon } from "../components/Icon";
+import BackToTop from "../components/BackToTop";
 
 export default function Profile() {
   const [checkedIds, setCheckedIds] = useState(new Set());
@@ -93,6 +94,7 @@ export default function Profile() {
           })}
         </ul>
       </main>
+      <BackToTop />
     </div>
   );
 }

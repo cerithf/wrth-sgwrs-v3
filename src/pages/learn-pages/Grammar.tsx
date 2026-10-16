@@ -38,7 +38,6 @@ export default function Grammar() {
           }}
         />
       }
-      <BackToTop addedClasses="mt-6" />
     </div>
   );
 }

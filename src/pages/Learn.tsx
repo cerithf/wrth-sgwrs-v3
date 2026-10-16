@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Translate from "./learn-pages/Translate";
 import Dictionary from "./learn-pages/Dictionary";
 import Grammar from "./learn-pages/Grammar";
+import BackToTop from "../components/BackToTop";
 
 const learnPages = {
   translate: <Translate />,
@@ -28,6 +29,7 @@ export default function Learn({
         <h1>{capitalise(activePage)}</h1>
         {learnPages[activePage]}
       </main>
+      <BackToTop />
     </div>
   );
 }
