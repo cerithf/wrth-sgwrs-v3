@@ -29,7 +29,7 @@ export default function Learn({
         <h1>{capitalise(activePage)}</h1>
         {learnPages[activePage]}
       </main>
-      <BackToTop />
+      <BackToTop addedClasses="my-4" />
     </div>
   );
 }

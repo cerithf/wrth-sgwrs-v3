@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
-import BackToTop from "./components/BackToTop";
 // pages
 import LogInPage from "./pages/LogInPage";
 import Profile from "./pages/Profile";
 import Learn from "./pages/Learn";
+import Practice from "./pages/Practice";
 import Error404 from "./pages/Error404";
 
 // common functions
@@ -21,6 +21,7 @@ function App() {
           <Route path="/" element={<LogInPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/practice" element={<Practice />} />
           <Route path="/translate" element={<Learn subpage="translate" />} />
           <Route path="/dictionary" element={<Learn subpage="dictionary" />} />
           <Route path="/grammar" element={<Learn subpage="grammar" />} />
