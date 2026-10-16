@@ -9,13 +9,13 @@ export default function Translate() {
     <div className="translate-page">
       <div className="bg-theme-dark-green text-white rounded-xl p-4">
         <div className="md:flex flex-row-reverse gap-4 items-center">
-          <ul className="flex gap-1 bg-theme-red rounded-full overflow-hidden text-center max-h-10 w-80 ml-auto">
+          <ul className="flex gap-1 bg-theme-red rounded-full overflow-hidden text-center max-h-10 w-80 ml-auto xxs-stack">
             {translationDirections.map((option) => (
               <li
                 className={
                   option == translationDirection
-                    ? "bg-theme-cream text-theme-red font-bold p-4 rounded-full shadow-2xl flex-1 center-all"
-                    : "p-4 rounded-full flex-1 center-all"
+                    ? "active bg-theme-cream text-theme-red font-bold p-4 rounded-full shadow-2xl flex-1 center-all"
+                    : "inactive bg-theme-red p-4 rounded-full flex-1 center-all"
                 }
               >
                 <button

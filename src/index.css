@@ -86,6 +86,22 @@ p {
   .xxs-grid-cols-1 {
     @apply grid-cols-1;
   }
+
+  .xxs-navbar {
+    @apply text-center gap-1 w-full m-0!;
+
+    & li {
+      @apply shadow-none w-full px-0;
+    }
+  }
+
+  .xxs-stack {
+    @apply flex flex-col max-h-max bg-transparent rounded-none w-auto gap-2;
+
+    & li {
+      @apply p-2;
+    }
+  }
 }
 
 /* GRAMMAR PAGE STYLING */

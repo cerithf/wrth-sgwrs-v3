@@ -23,7 +23,7 @@ export default function Profile() {
       <NavBar currentPage="profile" />
       <main className="py-3 px-6 gap-4 flex flex-col">
         <div className="heading md:flex gap-2">
-          <h1>Hey, user! 👋</h1>
+          <h1 className="text-center leading-15">Hey, user! 👋</h1>
           <button className="btn-secondary ml-auto mt-5 md:mt-0">
             Give us some feedback!
           </button>
@@ -61,7 +61,7 @@ export default function Profile() {
             </div>
           </div>
         </div>
-        <ul className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {Topics.map((topic, index) => {
             return (
               <li
@@ -82,7 +82,7 @@ export default function Profile() {
                 <div className="flex-3 flex flex-col">
                   <div className="py-4">
                     <h3 className="lh-1 m-0 p-0!">{topic.cy}</h3>
-                    <p className="italic text-gray-500 lh-base! m-0! p-0! text-left!">
+                    <p className="italic text-gray-500 lh-base! mt-1 p-0! text-left!">
                       {topic.en}
                     </p>
                   </div>

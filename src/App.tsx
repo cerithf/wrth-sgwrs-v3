@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import BackToTop from "./components/BackToTop";
 // pages
 import LogInPage from "./pages/LogInPage";
 import Profile from "./pages/Profile";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/*" element={<Error404 />} />
         </Routes>
       </div>
+      <BackToTop />
     </Router>
   );
 }
