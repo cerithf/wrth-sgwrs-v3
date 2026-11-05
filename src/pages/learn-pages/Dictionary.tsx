@@ -1,6 +1,7 @@
 import DictionaryData from "../../data/eurfa_dictionary/abridged_dictionary.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BackToTop from "../../components/BackToTop";
+import Icon from "../../components/Icon";
 
 interface dictionaryEntryInterface {
   index: number;
@@ -18,6 +19,7 @@ interface dictionaryEntryInterface {
 
 export default function Dictionary() {
   const [searchQuery, setSearchQuery] = useState<string | undefined>("");
+  const [exactMatchesOnly, setExactMatchesOnly] = useState(false);
 
   // prettier-ignore
   const welshAlphabet = [
@@ -97,34 +99,91 @@ export default function Dictionary() {
             type="text"
             name="query"
             id="query"
-            className="bg-theme-cream rounded-lg w-full p-1 text-black"
-            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search"
+            value={searchQuery}
+            className="bg-theme-cream rounded-lg w-full p-1 pl-2 text-black"
           />
-          <button className="btn bg-theme-cream text-theme-dark-green px-5 m-0">
-            Search
-          </button>
+          {searchQuery != "" && (
+            <button
+              type="reset"
+              className="text-theme-cream cursor-pointer"
+              onClick={() => {
+                setSearchQuery("");
+              }}
+            >
+              <Icon variant="x-mark" />
+            </button>
+          )}
         </form>
       </div>
-      {searchQuery}
-      <div className="alphabet font-bold flex flex-wrap gap-x-7 m-6 justify-center">
-        {welshAlphabet.map((letter) => (
-          <a href={"#" + letter} className="">
-            {letter}
-          </a>
-        ))}
-      </div>
-      {welshAlphabet.map((letter: string) => (
+      {searchQuery == "" || searchQuery == undefined ? (
         <>
-          <span className="flex gap-4 items-end mb-1">
-            <h2 id={letter} className="pt-8!">
-              {letter}
-            </h2>
-            <BackToTop />
-          </span>
-          <DictionaryBrowseSection data={getWordsWithLetter(letter)} />
-          <hr className="mt-4" />
+          <div className="alphabet font-bold flex flex-wrap gap-x-7 m-6 justify-center">
+            {welshAlphabet.map((letter) => (
+              <a href={"#" + letter} className="">
+                {letter}
+              </a>
+            ))}
+          </div>
+          {welshAlphabet.map((letter: string) => (
+            <>
+              <span className="flex gap-4 items-end mb-1">
+                <h2 id={letter} className="pt-8!">
+                  {letter}
+                </h2>
+                <BackToTop />
+              </span>
+              <DictionaryBrowseSection data={getWordsWithLetter(letter)} />
+              <hr className="mt-4" />
+            </>
+          ))}
         </>
-      ))}
+      ) : (
+        <>
+          {!exactMatchesOnly ? (
+            <>
+              <div className="flex flex-col items-center mt-4 mb-2">
+                <p className="text-xl m-0">
+                  Showing results containing <b>"{searchQuery}".</b>
+                </p>
+                <button
+                  className="m-0 text-theme-dark-green font-bold underline cursor-pointer"
+                  onClick={() => setExactMatchesOnly(true)}
+                >
+                  Show exact matches only.
+                </button>
+              </div>
+              <DictionaryBrowseSection
+                data={DictionaryData.filter(
+                  (entry) =>
+                    entry.lemma.includes(searchQuery) ||
+                    entry.enlemma.includes(searchQuery),
+                )}
+              />
+            </>
+          ) : (
+            <>
+              <div className="flex flex-col items-center mt-4 mb-2">
+                <p className="text-xl m-0">
+                  Showing results matching <b>"{searchQuery}"</b> exactly.
+                </p>
+                <button
+                  className="m-0 text-theme-dark-green font-bold underline cursor-pointer"
+                  onClick={() => setExactMatchesOnly(false)}
+                >
+                  Show more results.
+                </button>
+              </div>
+              <DictionaryBrowseSection
+                data={DictionaryData.filter(
+                  (entry) =>
+                    entry.lemma == searchQuery || entry.enlemma == searchQuery,
+                )}
+              />
+            </>
+          )}
+        </>
+      )}
     </div>
   );
 }
