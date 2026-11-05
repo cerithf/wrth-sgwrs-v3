@@ -21,8 +21,8 @@ export default function Learn({
   const [activePage, setActivePage] = useState<LearnPage>(subpage);
   return (
     <div className="learn-page h-screen flex flex-col">
-      <div className="md:flex">
-        <NavBar currentPage="learn" />
+      <div className="sm:flex">
+        <NavBar currentPage="learn" roundBottomCorners={false} />
         <NavBar currentPage={activePage} variant="learn-pages" />
       </div>
       <main className="py-3 px-6 gap-4 flex flex-col">
