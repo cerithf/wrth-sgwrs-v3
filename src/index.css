@@ -163,4 +163,8 @@ p {
   a {
     @apply font-bold text-theme-dark-green underline;
   }
+
+  .alphabet {
+    @apply ml-4 text-center font-bold tracking-wide;
+  }
 }

@@ -6,7 +6,7 @@ Grammatically speaking, Welsh considers W and Y to be vowels, with H sometimes i
 
 The Welsh Alphabet:
 
-<div class="alphabet" >A B C Ch D Dd E F Ff G Ng H I J L Ll M N O P Ph R Rh S T Th U W Y</div>
+<div class="alphabet" >A B C Ch D Dd E F Ff G Ng H I J L Ll M N O P Ph R Rh S T Th U W Y</div>
 
 Welsh spelling is phonetic, meaning it is fairly regular and the sound a word makes can be predicted based on its spelling. Not every letter in Welsh makes the same sound as it does in English. See below for the sounds that each letter makes.
 
