@@ -106,16 +106,61 @@ p {
 
 /* GRAMMAR PAGE STYLING */
 
-.GrammarPage h2 {
-  @apply text-center;
+/* tables */
+.grammar-page table {
+  @apply border-2 border-theme-dark-green rounded-xl ml-4;
+  border-collapse: separate;
+
+  th {
+    @apply bg-theme-green outline-2 outline-theme-green;
+  }
+
+  th:nth-child(1) {
+    @apply rounded-tl-lg;
+  }
+
+  th:nth-last-child(1) {
+    @apply rounded-tr-lg;
+  }
+
+  th,
+  td {
+    @apply p-2;
+  }
+
+  td:nth-child(1) {
+    @apply font-bold;
+  }
 }
 
-.GrammarPage h2,
-.GrammarPage h3 {
-  @apply pt-8;
-}
+/* text styling */
+.grammar-page {
+  h6 {
+    @apply font-bold text-lg leading-tight;
+  }
 
-.GrammarPage td,
-th {
-  @apply p-2 max-w-lg;
+  ul {
+    list-style-type: disc;
+    @apply ml-4 pl-4;
+  }
+
+  hr {
+    @apply mx-4 my-1 text-theme-dark-green;
+  }
+
+  p {
+    @apply ml-4;
+  }
+
+  h3 {
+    @apply mt-6;
+  }
+
+  code {
+    @apply font-bold;
+  }
+
+  a {
+    @apply font-bold text-theme-dark-green underline;
+  }
 }

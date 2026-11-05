@@ -69,6 +69,8 @@ The consonants ll and rh are an exception to this rule:
 - ‘y ddeuddegfed’ (the twelfth), ‘y bymthegfed’ (the fifteenth),
 - ‘yr ugeinfed’ (the twentieth), ‘y ganfed’ (the hundredth)
 
+<hr />
+
 - y bumed ferch - the fifth girl
 - y ddegfed gân; - the tenth song
 - y nawfed flwyddyn- the ninth year
@@ -164,7 +166,7 @@ The consonants ‘ll’ and ‘rh’ are exceptions to this rule
 - Mae rhaid i’r plant fynd i’r gwely’n gynnar. – The children will have to go to bed early.
 - Does dim rhaid iddi hi dalu’r bil trydan heddiw. – She doesn't need to pay the electricity bill today.
 
-###### 16. In negative forms of ‘short’ verbs in the Past and Future Tenses - except those verbs which begin with c, p or t (see Rules 6 and 7 under Aspirate Mutation)
+###### 16. In negative forms of ‘short’ verbs in the Past and Future Tenses - except those verbs which begin with c, p or t (see Rules 6 and 7 under Aspirate Mutation)
 
 - Ddarllenais i ddim papur ddoe. - I didn’t read a paper yesterday.
 - Welodd hi mo’r ffilm. - She didn’t see the film.
@@ -174,7 +176,7 @@ The consonants ‘ll’ and ‘rh’ are exceptions to this rule
 - Ddarllenaist ti’r papur ddoe? - Did you read the paper yesterday?
 - Welodd hi’r ffilm? - Did she see the film?
 
-###### 18. In the indefinite object of ‘short’ verbs in the Past and FutureTenses - (i.e the first word afer the subject)
+###### 18. In the indefinite object of ‘short’ verbs in the Past and Future Tenses - (i.e the first word afer the subject)
 
 - llyfr - Fe ddarllenais i lyfr da. - I read a good book.
 - car - Mi brynan nhw gar newydd y flwyddyn nesa’. - They’ll buy a new car next year.

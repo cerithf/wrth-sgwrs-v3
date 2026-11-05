@@ -2,7 +2,7 @@
 
 ### Grammatical gender
 
-All nouns in Welsh are either masculine or feminine. Unfortunately, there's no way of telling which nouns are feminine and which are masculine, so it is important to learn the gender at the same time as the meaning. You can find the gender of a noun in dictionaries, often words will mark nouns as etiher `g`/`eg` ((enw) gwrywaidd = masculine (noun)) or `b`/`eb` ((enw) benywaidd = feminine (noun)). There are a handful of nouns, like "cwpan" (cup) which can be treated as masculine or feminine with no difference in meaning, it is simply up to the speaker. Often dictionaries will either pick masculine or feminine for these nouns, or mark them as `g/b`/`eg/b`. You can search a word on the Dictionary page on _Wrth Sgwrs_ to see if a word is masculine or feminine 👈🏼
+All nouns in Welsh are either masculine or feminine. Unfortunately, there's no way of telling which nouns are feminine and which are masculine, so it is important to learn the gender at the same time as the meaning. You can find the gender of a noun in dictionaries, often words will mark nouns as etiher `g`/`eg` ((enw) gwrywaidd = masculine (noun)) or `b`/`eb` ((enw) benywaidd = feminine (noun)). There are a handful of nouns, like "cwpan" (cup) which can be treated as masculine or feminine with no difference in meaning, it is simply up to the speaker. Often dictionaries will either pick masculine or feminine for these nouns, or mark them as `g/b` or `eg/b`. You can search a word on the <a href="/dictionary">Dictionary page on _Wrth Sgwrs_</a> to see if a word is masculine or feminine 👈🏼
 
 Since Welsh has no word for "it", we refer to nouns as "he" or "she" depending on the noun's gender:
 
