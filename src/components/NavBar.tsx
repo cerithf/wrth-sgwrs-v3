@@ -32,7 +32,7 @@ export default function NavBar({
     );
   }
   return (
-    <nav className="w-full h-fit flex justify-center m-2">
+    <nav className="w-full h-fit flex justify-center sm:mt-2! m-0!">
       <ul
         className={
           "flex gap-0 bg-theme-green rounded-full overflow-hidden" +

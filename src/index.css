@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  scrollbar-gutter: stable;
-}
-
 @theme {
   --color-theme-green: #8cb369;
   --color-theme-yellow: #f4e285;
