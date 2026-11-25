@@ -18,7 +18,7 @@ export default function Grammar() {
   const [currentPage, setCurrentPage] = useState(0);
   return (
     <div className="grammar-page">
-      <ul className="grid xxs-grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 bg-theme2 rounded-xl p-2">
+      <ul className="grid xxs-grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 bg-theme2 rounded-xl p-0 sm:p-2">
         {markdownFiles.map((file) => (
           <li
             className="btn-primary center-all"
