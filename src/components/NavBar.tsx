@@ -35,7 +35,7 @@ export default function NavBar({
     <nav className="w-full h-fit flex justify-center sm:mt-2! m-0!">
       <ul
         className={
-          "flex gap-0 bg-theme-green rounded-full overflow-hidden max-sm:rounded-none max-sm:w-full justify-between max-sm:px-[10%] " +
+          "flex gap-0 bg-theme-green rounded-full overflow-hidden max-sm:rounded-none max-sm:w-full justify-between max-sm:px-[10%] min-w-78.5 " +
           (roundBottomCorners && "max-sm:round-bottom-corners")
         }
       >
