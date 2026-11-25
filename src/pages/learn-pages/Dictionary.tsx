@@ -118,12 +118,14 @@ export default function Dictionary() {
       </div>
       {searchQuery == "" || searchQuery == undefined ? (
         <>
-          <div className="alphabet font-bold flex flex-wrap gap-x-7 m-6 justify-center">
-            {welshAlphabet.map((letter) => (
-              <a href={"#" + letter} className="">
-                {letter}
-              </a>
-            ))}
+          <div className="flex flex-col">
+            <div className="alphabet font-bold flex flex-wrap gap-x-7 m-6 justify-center md:max-xl:max-w-150 self-center">
+              {welshAlphabet.map((letter) => (
+                <a href={"#" + letter} className="">
+                  {letter}
+                </a>
+              ))}
+            </div>
           </div>
           {welshAlphabet.map((letter: string) => (
             <>
